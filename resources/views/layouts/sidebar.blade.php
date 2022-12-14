@@ -32,56 +32,36 @@
                     <span class="arrow {{ (request()->segment(1) == 'bahan-baku') ? 'open' : '' }}"></span>
                     </a>
                     <ul class="sub-menu">
-                        <li class= "{{ (request()->segment(2) == 'supplier') ? 'active' : '' }}">
-                            <a href="{{ route('supplier.index') }}">
-                            Supplier</a>
+                        <li class= "{{ (request()->segment(2) == 'material') ? 'active' : '' }}">
+                            <a href="{{ route('material.index') }}">
+                            Material</a>
                         </li>
-                       <li class= "{{ (request()->segment(2) == 'bahanbaku') ? 'active' : '' }}">
-                            <a href="{{ route('bahanbaku.index') }}">
-                            Sediaan Bahan Baku</a>
+                       <li class= "{{ (request()->segment(2) == 'model-produk') ? 'active' : '' }}">
+                            <a href="{{ route('model-produk.index') }}">
+                            Model Gitar</a>
                         </li>
-                       <li class= "{{ (request()->segment(2) == 'transaksi-bahanbaku') ? 'active' : '' }}">
-                            <a href="{{ route('transaksi-bahanbaku.index') }}">
-                            Transaksi Bahan Baku</a>
+                       <li class= "{{ (request()->segment(2) == 'produk-gitar') ? 'active' : '' }}">
+                            <a href="{{ route('produk-gitar.index') }}">
+                            Produk Gitar</a>
                         </li>
                     </ul>
                 </li>
-                <li class="{{ (request()->segment(1) == 'pemesanan') ? 'active' : '' }}">
+                <li class="{{ (request()->segment(1) == 'order') ? 'active' : '' }}">
                     <a href="javascript:;">
                     <i class="icon-briefcase"></i>
-                    <span class="title">Pemesanan</span>
+                    <span class="title">Order</span>
                     <span class="selected"></span>
-                    <span class="arrow {{ (request()->segment(1) == 'pemesanan') ? 'open' : '' }}"></span>
+                    <span class="arrow {{ (request()->segment(1) == 'order') ? 'open' : '' }}"></span>
                     </a>
                     <ul class="sub-menu">
-                        <li class="{{ (request()->segment(2) == 'pelanggan') ? 'active' : '' }}">
-                            <a href="{{ route('pelanggan.index') }}">
-                            Pelanggan</a>
+                        <li class="{{ (request()->segment(2) == 'customer') ? 'active' : '' }}">
+                            <a href="{{ route('customer.index') }}">
+                            Customer</a>
                         </li>
-                        <li class="{{ (request()->segment(2) == 'modelanda') ? 'active' : '' }}">
-                            <a href="{{ route('modelanda.index') }}">
-                            Model Anda</a>
+                        <li class="{{ (request()->segment(2) == 'transaksi-order') ? 'active' : '' }}">
+                            <a href="{{ route('transaksi-order.index') }}">
+                            Transaksi Order</a>
                         </li>
-                        <li class="{{ (request()->segment(2) == 'modelpelanggan') ? 'active' : '' }}">
-                            <a href="{{ route('modelpelanggan.index') }}">
-                            Model Pelanggan</a>
-                        </li>
-                        <li class="{{ (request()->segment(2) == 'transaksi') ? 'active' : '' }}">
-                            <a href="{{ route('transaksi.index') }}">
-                            Transaksi Pemesanan</a>
-                        </li>
-                        <li class="{{ (request()->segment(2) == 'informasiukuran') ? 'active' : '' }}">
-                            <a href="{{ route('informasiukuran.index') }}">
-                            Informasi Ukuran</a>
-                        </li>
-                        {{-- <li class="{{ (request()->segment(2) == 'ukuranpria') ? 'active' : '' }}">
-                            <a href="{{ route('ukuranpria.index') }}">
-                            Ukuran Pria</a>
-                        </li>
-                        <li class="{{ (request()->segment(2) == 'ukuranwanita') ? 'active' : '' }}">
-                            <a href="{{ route('ukuranwanita.index') }}">
-                            Ukuran Wanita</a>
-                        </li> --}}
                     </ul>
                 </li>
                 <li class="{{ (request()->segment(1) == 'produksi') ? 'active' : '' }}">
@@ -92,11 +72,11 @@
                     <span class="arrow {{ (request()->segment(1) == 'produksi') ? 'open' : '' }}"></span>
                     </a>
                     <ul class="sub-menu">
-                         <li class="{{ (request()->segment(2) == 'daftar-progres') ? 'active' : '' }}">
-                            <a href="{{ route('daftar-progres.index') }}">
-                            Daftar Progres</a>
+                         <li class="{{ (request()->segment(2) == 'bill-of-material') ? 'active' : '' }}">
+                            <a href="{{ route('bill-of-material.index') }}">
+                            Bill Of Material</a>
                         </li>
-                         <li class="{{ (request()->segment(2) == 'jadwal-progres') ? 'active' : '' }}">
+                         {{-- <li class="{{ (request()->segment(2) == 'jadwal-progres') ? 'active' : '' }}">
                             <a href="{{ route('jadwal-progres.index') }}">
                             Jadwal Progres</a>
                         </li>
@@ -107,10 +87,10 @@
                          <li class="{{ (request()->segment(2) == 'realisasi-progres') ? 'active' : '' }}">
                             <a href="{{ route('realisasi-progres.index') }}">
                             Realisasi Progres</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </li>
-                <li class="{{ (request()->segment(1) == 'pengiriman') ? 'active' : '' }}">
+                {{-- <li class="{{ (request()->segment(1) == 'pengiriman') ? 'active' : '' }}">
                     <a href="javascript:;">
                     <i class="icon-present"></i>
                     <span class="title">Pengiriman</span>
@@ -127,6 +107,6 @@
                            Pengiriman</a>
                        </li>
                     </ul>
-                </li>
+                </li> --}}
 			</ul>
 			<!-- END SIDEBAR MENU -->
