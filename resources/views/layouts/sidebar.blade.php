@@ -76,11 +76,11 @@
                             <a href="{{ route('bill-of-material.index') }}">
                             Bill Of Material</a>
                         </li>
-                         {{-- <li class="{{ (request()->segment(2) == 'jadwal-progres') ? 'active' : '' }}">
-                            <a href="{{ route('jadwal-progres.index') }}">
-                            Jadwal Progres</a>
+                         <li class="{{ (request()->segment(2) == 'surat-perintah-kerja') ? 'active' : '' }}">
+                            <a href="{{ route('surat-perintah-kerja.index') }}">
+                            Surat Perintah Kerja</a>
                         </li>
-                         <li class="{{ (request()->segment(2) == 'peng-bahan-baku') ? 'active' : '' }}">
+                         {{-- <li class="{{ (request()->segment(2) == 'peng-bahan-baku') ? 'active' : '' }}">
                             <a href="{{ route('peng-bahan-baku.index') }}">
                             Penggunaan Bahan Baku</a>
                         </li>

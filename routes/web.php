@@ -6,6 +6,7 @@ use App\Http\Controllers\MaterialController;
 use App\Http\Controllers\ModelProdukController;
 use App\Http\Controllers\ProdukGitarController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SuratPerintahKerjaController;
 use App\Http\Controllers\TransaksiOrderController;
 use Illuminate\Support\Facades\Route;
 
@@ -59,6 +60,7 @@ Route::middleware('auth')->group(function () {
             Route::put('update-detail/{id}', [BillOfMaterialController::class, 'updateDetail'])->name('bill-of-material.update-detail');
             Route::get('get-ajax-bahan-baku/{id}', [BillOfMaterialController::class, 'getAjaxBahanBaku']);
         });
+        Route::resource('surat-perintah-kerja', SuratPerintahKerjaController::class);
     });
 
 });
